@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #08415C;
+  --background: #000000;
+  --foreground: #F1BF98;
+}
+html{
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.star{
+  height: 2px;
+  width: 2px;
+  position: fixed;
+  background: white;
+  z-index: -1;
+}
+
+
+.section-container{
+  height: 100vh;
+  width: 100%;
+
+  transition: 1s ease-in-out;
+  font-size: 5vh;
+  background: none;
+}
+
+.in-view{
+  transform: none;
+  opacity: 1;
+}
+
+.not-in-view{
+  opacity: 0;
+}
+.img{
+  display: block;
+  filter: drop-shadow(1px 1px 2px #CC2936) drop-shadow(-1px -1px 2px #EEE5E9) drop-shadow(0 0 2px #000000); 
+  animation :ease-in-out wavy 4s infinite alternate;
+
+}
+
+@keyframes wavy{
+
+  0%{
+    transform: scale(0.98) ;
+  }
+
+  100%{
+    transform: scale(1.02) ;
+  }
+
+}
+
+.pirate-text{
+  filter: drop-shadow(0px 0px 2px #000000);
+  margin: 5%;
+}
+
+.roast{
+  backdrop-filter: blur(2px);
+}
+
+.page1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.page2{
+  font-size: 4.167vh;
+}
+
+.userinput{
+  width: 35vw;
+  height: 25vh;
+  resize: none;
+  background-color: #6B818C;
+  color: #FFFFFF;
+  margin: 5%;
+  text-align: center;
+  font-size: 3.75vh;
+}
+.userinput:focus{
+  outline: none;
+}
+.userinput::placeholder{
+  text-align: center;
+  color: #eae3e3c9;
+}
+
+.button{
+  background-color: #6B818C;
+  color: #FFFFFF;
+  width: fit-content;
+  padding: 2%;
+  border-radius: 50px;
+}
+
+.page3{
+  font-size: 4vh;
+}
+
+.roast{
+  color: #CC2936;
+}
+
+
+.button-container{
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.img1{
+  width: 37.5%;
+}
+
+.img2{
+  width: 50%;
+}
+
+.img3{
+  width: 40%;
+} 
+.img4{
+  width: 50%;
+}
+
