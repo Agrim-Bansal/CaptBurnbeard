@@ -34,4 +34,3 @@ export default async function handler(req, res){
   roast.slice(roast.search("\""), roast.length-1);
   res.status(200).json({"body": roast});
 }
-
